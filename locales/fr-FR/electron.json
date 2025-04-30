@@ -2,7 +2,7 @@
   "remoteServer": {
     "authError": "Échec de l'autorisation : {{error}}",
     "authPending": "Veuillez terminer l'autorisation dans le navigateur",
-    "configDesc": "Connectez-vous au serveur LobeChat distant pour activer la synchronisation des données",
+    "configDesc": "Connectez-vous au serveur GDZ.WORKS distant pour activer la synchronisation des données",
     "configError": "Erreur de configuration",
     "configTitle": "Configurer la synchronisation dans le cloud",
     "connect": "Se connecter et autoriser",

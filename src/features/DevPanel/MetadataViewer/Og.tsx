@@ -46,7 +46,7 @@ const MetaData = memo(() => {
                   zIndex: 10,
                 }}
               >
-                lobehub.com
+                gdz.works
               </div>
               <Image
                 alt={'og'}

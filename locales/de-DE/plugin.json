@@ -188,7 +188,7 @@
       "edit": "Benutzerdefiniertes Plugin bearbeiten"
     },
     "type": {
-      "lobe": "LobeChat-Plugin",
+      "lobe": "GDZ.WORKS-Plugin",
       "openai": "OpenAI-Plugin"
     },
     "update": "Aktualisieren",
