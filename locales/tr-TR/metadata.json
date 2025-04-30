@@ -5,7 +5,7 @@
   },
   "chat": {
     "description": "{{appName}} size en iyi ChatGPT, Claude, Gemini, OLLaMA WebUI deneyimini sunar",
-    "title": "{{appName}}: Kişisel AI verimlilik aracı, kendinize daha akıllı bir zihin verin"
+    "title": "Chat GPT Türkçe: {{appName}}"
   },
   "discover": {
     "assistants": {

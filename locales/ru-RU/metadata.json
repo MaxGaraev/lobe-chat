@@ -4,8 +4,8 @@
     "title": "Журнал изменений"
   },
   "chat": {
-    "description": "{{appName}} предлагает вам лучший опыт использования ChatGPT, Claude, Gemini и OLLaMA WebUI",
-    "title": "{{appName}}: личный инструмент AI для повышения эффективности, дайте себе более умный мозг"
+    "description": "{{appName}} предлагает вам лучший опыт использования ChatGPT, Claude, Gemini и OLLaMA WebUI {{appName}}",
+    "title": "Чат GPT на русском языке: онлайн-чат с нейросетями от {{appName}}"
   },
   "discover": {
     "assistants": {
@@ -34,6 +34,6 @@
   },
   "welcome": {
     "description": "{{appName}} предлагает вам лучший опыт использования ChatGPT, Claude, Gemini и OLLaMA WebUI",
-    "title": "Добро пожаловать в {{appName}}: личный инструмент AI для повышения эффективности, дайте себе более умный мозг"
+    "title": "ГДЗ - готовые домашние задания и решебники: {{appName}}"
   }
 }

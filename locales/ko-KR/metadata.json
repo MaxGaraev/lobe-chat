@@ -5,7 +5,7 @@
   },
   "chat": {
     "description": "{{appName}}가 제공하는 최고의 ChatGPT, Claude, Gemini, OLLaMA WebUI 사용 경험",
-    "title": "{{appName}}: 개인 AI 효율 도구, 더 똑똑한 두뇌를 위한 선택"
+    "title": "Chat GPT 한국어: {{appName}}"
   },
   "discover": {
     "assistants": {

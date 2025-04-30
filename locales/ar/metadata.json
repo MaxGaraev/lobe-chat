@@ -5,7 +5,7 @@
   },
   "chat": {
     "description": "{{appName}} يقدم لك أفضل تجربة لاستخدام ChatGPT وClaude وGemini وOLLaMA WebUI",
-    "title": "{{appName}}: أداة الذكاء الاصطناعي الشخصية، امنح نفسك دماغًا أكثر ذكاءً"
+    "title": "Chat GPT العربية: {{appName}}"
   },
   "discover": {
     "assistants": {

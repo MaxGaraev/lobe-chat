@@ -5,7 +5,7 @@
   },
   "chat": {
     "description": "{{appName}} 帶給你最好的 ChatGPT, Claude, Gemini, OLLaMA WebUI 使用體驗",
-    "title": "{{appName}}：個人 AI 效能工具，給自己一個更聰明的大腦"
+    "title": "Chat GPT 中文：{{appName}}"
   },
   "discover": {
     "assistants": {

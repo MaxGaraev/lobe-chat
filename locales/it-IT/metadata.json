@@ -5,7 +5,7 @@
   },
   "chat": {
     "description": "{{appName}} ti offre la migliore esperienza con ChatGPT, Claude, Gemini e OLLaMA WebUI",
-    "title": "{{appName}}: strumento di efficienza personale AI, per darti un cervello più intelligente"
+    "title": "Chat GPT: {{appName}}"
   },
   "discover": {
     "assistants": {

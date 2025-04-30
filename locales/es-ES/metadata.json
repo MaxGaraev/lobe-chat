@@ -5,7 +5,7 @@
   },
   "chat": {
     "description": "{{appName}} te ofrece la mejor experiencia de uso de ChatGPT, Claude, Gemini y OLLaMA WebUI",
-    "title": "{{appName}}: Herramienta de productividad personal de IA, dale a tu cerebro un impulso más inteligente"
+    "title": "Chat GPT Español: {{appName}}"
   },
   "discover": {
     "assistants": {

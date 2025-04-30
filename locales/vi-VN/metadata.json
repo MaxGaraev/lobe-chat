@@ -5,7 +5,7 @@
   },
   "chat": {
     "description": "{{appName}} mang đến cho bạn trải nghiệm tốt nhất với ChatGPT, Claude, Gemini, OLLaMA WebUI",
-    "title": "{{appName}}: Công cụ AI cá nhân, giúp bạn có một bộ não thông minh hơn"
+    "title": "Chat GPT Việt Nam: {{appName}}"
   },
   "discover": {
     "assistants": {
