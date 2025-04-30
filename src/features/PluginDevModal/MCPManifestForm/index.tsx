@@ -140,7 +140,9 @@ const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
         ...(mcpType === 'http' ? [HTTP_URL_KEY] : [STDIO_COMMAND, STDIO_ARGS]),
       ]);
       isValid = true;
-    } catch {}
+    } catch {
+      // Ошибка валидации полей формы, обработка не требуется
+    }
 
     if (!isValid) {
       setIsTesting(false);
