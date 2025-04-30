@@ -28,6 +28,10 @@ export const getAnalyticsConfig = () => {
       GOOGLE_ANALYTICS_MEASUREMENT_ID: z.string().optional(),
 
       REACT_SCAN_MONITOR_API_KEY: z.string().optional(),
+
+      // Yandex Metrika Analytics
+      ENABLED_YANDEX_METRIKA: z.boolean(),
+      YANDEX_METRIKA_ID: z.string().optional(),
     },
     runtimeEnv: {
       // Plausible Analytics
@@ -61,6 +65,10 @@ export const getAnalyticsConfig = () => {
       // React Scan Monitor
       // https://dashboard.react-scan.com
       REACT_SCAN_MONITOR_API_KEY: process.env.REACT_SCAN_MONITOR_API_KEY,
+
+      // Yandex Metrika Analytics
+      ENABLED_YANDEX_METRIKA: !!process.env.YANDEX_METRIKA_ID,
+      YANDEX_METRIKA_ID: process.env.YANDEX_METRIKA_ID,
     },
   });
 };
