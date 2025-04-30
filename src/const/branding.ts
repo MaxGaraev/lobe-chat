@@ -4,8 +4,8 @@
 
 export const LOBE_CHAT_CLOUD = 'GDZ.WORKS';
 
-export const BRANDING_NAME = 'GDZ.WORKS - GPT для работы и учебы';
-export const BRANDING_LOGO_URL = '';
+export const BRANDING_NAME = 'GDZ.WORKS';
+export const BRANDING_LOGO_URL = '/icons/icon-192x192.png';
 
 export const ORG_NAME = 'GDZ.WORKS';
 

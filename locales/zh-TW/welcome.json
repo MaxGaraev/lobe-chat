@@ -7,7 +7,7 @@
     "defaultMessage": "我是您的私人智能助理 {{appName}} ，請問現在能幫您做什麼？\n如果需要獲得更加專業或定制的助手，可以點擊 `+` 創建自定義助手",
     "defaultMessageWithoutCreate": "我是您的私人智能助理 {{appName}} ，請問現在能幫您做什麼？",
     "qa": {
-      "q01": "LobeHub 是什麼？",
+      "q01": "Gdz.Works 是什麼？",
       "q02": "{{appName}} 是什麼？",
       "q03": "{{appName}} 是否有社群支持？",
       "q04": "{{appName}} 支持哪些功能？",
@@ -28,10 +28,10 @@
       "title": "大家都在問："
     },
     "welcome": {
-      "afternoon": "下午好",
-      "morning": "早上好",
-      "night": "晚上好",
-      "noon": "中午好"
+      "afternoon": "Chat GPT 中文",
+      "morning": "Chat GPT 中文",
+      "night": "Chat GPT 中文",
+      "noon": "Chat GPT 中文"
     }
   },
   "header": "歡迎",

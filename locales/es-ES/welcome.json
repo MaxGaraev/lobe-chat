@@ -7,7 +7,7 @@
     "defaultMessage": "Soy su asistente inteligente personal {{appName}}. ¿En qué puedo ayudarle ahora?\nSi necesita un asistente más profesional o personalizado, puede hacer clic en `+` para crear un asistente personalizado.",
     "defaultMessageWithoutCreate": "Soy su asistente inteligente personal {{appName}}. ¿En qué puedo ayudarle ahora?",
     "qa": {
-      "q01": "¿Qué es LobeHub?",
+      "q01": "¿Qué es Gdz.Works?",
       "q02": "¿Qué es {{appName}}?",
       "q03": "¿{{appName}} tiene soporte comunitario?",
       "q04": "¿Qué funciones soporta {{appName}}?",
@@ -28,10 +28,10 @@
       "title": "Preguntas frecuentes:"
     },
     "welcome": {
-      "afternoon": "Buenas tardes",
-      "morning": "Buenos días",
-      "night": "Buenas noches",
-      "noon": "Buen mediodía"
+      "afternoon": "Chat GPT en español",
+      "morning": "Chat GPT en español",
+      "night": "Chat GPT en español",
+      "noon": "Chat GPT en español"
     }
   },
   "header": "Bienvenido/a",

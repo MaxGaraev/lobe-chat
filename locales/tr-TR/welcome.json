@@ -7,7 +7,7 @@
     "defaultMessage": "Ben sizin özel akıllı asistanınız {{appName}}. Şu anda size nasıl yardımcı olabilirim?\nDaha profesyonel veya özel bir asistan istiyorsanız, özel asistan oluşturmak için `+` butonuna tıklayabilirsiniz.",
     "defaultMessageWithoutCreate": "Ben sizin özel akıllı asistanınız {{appName}}. Şu anda size nasıl yardımcı olabilirim?",
     "qa": {
-      "q01": "LobeHub nedir?",
+      "q01": "Gdz.Works nedir?",
       "q02": "{{appName}} nedir?",
       "q03": "{{appName}}'in topluluk desteği var mı?",
       "q04": "{{appName}} hangi özellikleri destekliyor?",
@@ -28,10 +28,10 @@
       "title": "Herkesin Sorduğu Sorular:"
     },
     "welcome": {
-      "afternoon": "İyi akşamlar",
-      "morning": "Günaydın",
-      "night": "İyi geceler",
-      "noon": "Tünaydın"
+      "afternoon": "Chat GPT Türkçe",
+      "morning": "Chat GPT Türkçe",
+      "night": "Chat GPT Türkçe",
+      "noon": "Chat GPT Türkçe"
     }
   },
   "header": "Hoş geldiniz",

@@ -7,7 +7,7 @@
     "defaultMessage": "Ik ben uw persoonlijke slimme assistent {{appName}}. Hoe kan ik u nu helpen?\nAls u een meer professionele of op maat gemaakte assistent nodig heeft, kunt u op `+` klikken om een aangepaste assistent te maken.",
     "defaultMessageWithoutCreate": "Ik ben uw persoonlijke slimme assistent {{appName}}. Hoe kan ik u nu helpen?",
     "qa": {
-      "q01": "Wat is LobeHub?",
+      "q01": "Wat is Gdz.Works?",
       "q02": "Wat is {{appName}}?",
       "q03": "Heeft {{appName}} ondersteuning van de gemeenschap?",
       "q04": "Welke functies ondersteunt {{appName}}?",
@@ -28,10 +28,10 @@
       "title": "Veelgestelde vragen: "
     },
     "welcome": {
-      "afternoon": "Goedemiddag",
-      "morning": "Goedemorgen",
-      "night": "Goedenavond",
-      "noon": "Goedemiddag"
+      "afternoon": "Chat GPT in het Nederlands",
+      "morning": "Chat GPT in het Nederlands",
+      "night": "Chat GPT in het Nederlands",
+      "noon": "Chat GPT in het Nederlands"
     }
   },
   "header": "Welkom",

@@ -7,7 +7,7 @@
     "defaultMessage": "私はあなたのプライベートインテリジェントアシスタント {{appName}} です。今、何をお手伝いできますか？\nより専門的またはカスタマイズされたアシスタントが必要な場合は、`+` をクリックしてカスタムアシスタントを作成してください。",
     "defaultMessageWithoutCreate": "私はあなたのプライベートインテリジェントアシスタント {{appName}} です。今、何をお手伝いできますか？",
     "qa": {
-      "q01": "LobeHub とは何ですか？",
+      "q01": "Gdz.Works とは何ですか？",
       "q02": "{{appName}} とは何ですか？",
       "q03": "{{appName}} にはコミュニティサポートがありますか？",
       "q04": "{{appName}} はどのような機能をサポートしていますか？",
@@ -28,10 +28,10 @@
       "title": "よくある質問："
     },
     "welcome": {
-      "afternoon": "こんにちは",
-      "morning": "おはようございます",
-      "night": "こんばんは",
-      "noon": "こんにちは"
+      "afternoon": "Chat GPT 日本語",
+      "morning": "Chat GPT 日本語",
+      "night": "Chat GPT 日本語",
+      "noon": "Chat GPT 日本語"
     }
   },
   "header": "ようこそ",
