@@ -1,6 +1,7 @@
 'use client';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import type { FC } from 'react';
+import Image from 'next/image';
 
 interface YandexMetrikaProps {
   metrikaId: string;
@@ -30,20 +31,18 @@ const YandexMetrika: FC<YandexMetrikaProps> = ({ metrikaId }: { metrikaId: strin
         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
       })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
       ym(${metrikaId}, "init", {
+        accurateTrackBounce:true,
         clickmap:true,
         trackLinks:true,
-        accurateTrackBounce:true,
         webvisor:true
       });
     `;
 
-    document.head.appendChild(script);
+    document.head.append(script);
 
     return () => {
       // Удаляем скрипт при размонтировании компонента
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
+      script.remove();
     };
   }, [metrikaId]);
 
@@ -51,10 +50,12 @@ const YandexMetrika: FC<YandexMetrikaProps> = ({ metrikaId }: { metrikaId: strin
   return (
     <noscript>
       <div>
-        <img
-          src={`https://mc.yandex.ru/watch/${metrikaId}`}
-          style={{ position: 'absolute', left: '-9999px' }}
+        <Image
           alt=""
+          height={1}
+          src={`https://mc.yandex.ru/watch/${metrikaId}`}
+          style={{ left: '-9999px', position: 'absolute' }}
+          width={1}
         />
       </div>
     </noscript>
