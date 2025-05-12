@@ -1,7 +1,7 @@
 ---
 title: Google Gemini 系列 Tool Calling  评测
 description: >-
-  使用 LobeChat 测试 Google Gemini 系列模型（Gemini 1.5 Pro / Gemini 1.5 Flash）
+  使用 GDZ.WORKS 测试 Google Gemini 系列模型（Gemini 1.5 Pro / Gemini 1.5 Flash）
   的工具调用（Function Calling）能力，并展现评测结果
 tags:
   - Tools Calling
@@ -33,9 +33,7 @@ Test Instruction: Instruction ①
 
 <Video src="https://github.com/lobehub/lobe-chat/assets/28616219/a5a35431-2a15-4e79-97d5-502637f829bc" />
 
-In the json output from Gemini, the name is incorrect, so LobeChat cannot recognize which plugin it called. (In the input, the name of the weather plugin is `realtime-weather____fetchCurrentWeather`, while Gemini returns `weather____fetchCurrentWeather`).
-
-<Image alt="Tools Calling for Simple Instruction in Gemini 1.5 Pro" src="https://github.com/lobehub/lobe-chat/assets/28616219/1e077799-c25e-43c7-8492-c5c0bb9aed9b" />
+In the json output from Gemini, the name is incorrect, so GDZ.WORKS cannot recognize which plugin it called. (In the input, the name of the weather plugin is `realtime-weather____fetchCurrentWeather`, while Gemini returns `weather____fetchCurrentWeather`).
 
 <details>
   <summary>Original Tools Calling Output:</summary>
@@ -58,8 +56,6 @@ In the json output from Gemini, the name is incorrect, so LobeChat cannot recogn
 ### Complex Instruction Call: Image Generation
 
 Test Instruction: Instruction ②
-
-<Image alt="Tools Calling for Complex Instruction in Gemini 1.5 Pro" src="https://github.com/lobehub/lobe-chat/assets/28616219/a2454a60-3271-4786-861f-d49ceac1316e" />
 
 When testing a set of complex instructions, Google throws an error directly:
 

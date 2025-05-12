@@ -1,5 +1,5 @@
 {
-  "name": "lobehub-desktop-dev",
+  "name": "gdz-works-desktop",
   "version": "0.0.10",
   "description": "GDZ.WORKS Desktop Application",
   "homepage": "https://lobehub.com",
@@ -47,6 +47,7 @@
     "@types/set-cookie-parser": "^2.4.10",
     "consola": "^3.1.0",
     "cookie": "^1.0.2",
+    "dmg-license": "^1.0.11",
     "electron": "^35.2.0",
     "electron-builder": "^26.0.12",
     "electron-is": "^3.0.0",

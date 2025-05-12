@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { Center } from 'react-layout-kit';
 
 import DataStyleModal from '@/components/DataStyleModal';
+import { FILE_UPLOAD_MAX_SIZE_MB } from '@/const/file';
 import { importService } from '@/services/import';
 import { ImportResult, ImportResults } from '@/services/import/_deprecated';
 import { useChatStore } from '@/store/chat';
@@ -155,6 +156,18 @@ const DataImporter = memo<DataImporterProps>(({ children, onFinishImport }) => {
       <Upload
         accept={'application/json'}
         beforeUpload={async (file) => {
+          // Ограничение на размер файла: 25 МБ
+          if (file.size > FILE_UPLOAD_MAX_SIZE_MB * 1024 * 1024) {
+            // Показываем ошибку через notification из antd
+            import('antd').then(({ notification }) => {
+              notification.error({
+                description: `Максимальный размер файла — ${FILE_UPLOAD_MAX_SIZE_MB} МБ`,
+                message: 'Ошибка',
+              });
+            });
+            return false;
+          }
+
           const config = await parseConfigFile(file);
           if (!config) return false;
 

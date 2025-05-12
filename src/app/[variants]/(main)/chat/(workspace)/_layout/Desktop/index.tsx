@@ -1,4 +1,6 @@
-import { Suspense } from 'react';
+'use client';
+
+import { Suspense, useEffect } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 import BrandTextLoading from '@/components/Loading/BrandTextLoading';
@@ -9,6 +11,17 @@ import Portal from './Portal';
 import TopicPanel from './TopicPanel';
 
 const Layout = ({ children, topic, conversation, portal }: LayoutProps) => {
+  // Глобальный обработчик ChunkLoadError для автоматической перезагрузки страницы
+  useEffect(() => {
+    const handler = (e: ErrorEvent) => {
+      if (e?.message?.includes('Loading chunk') || e?.message?.includes('ChunkLoadError')) {
+        window.location.reload();
+      }
+    };
+    window.addEventListener('error', handler);
+    return () => window.removeEventListener('error', handler);
+  }, []);
+
   return (
     <>
       <ChatHeader />

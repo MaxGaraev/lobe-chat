@@ -7,7 +7,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import Statistic from '../../../../../components/Statistic';
 
-const DEFAULT_DOC_URL = 'https://lobehub.com/docs/usage/agents/model';
+const DEFAULT_DOC_URL = 'https://gdz.works/chat';
 
 export interface ParameterItemProps {
   defaultValue: string | number;

@@ -1,8 +1,8 @@
 ---
-title: LobeChat 自定义模型服务商模型列表及扩展能力配置
-description: 了解如何在 LobeChat 中自定义模型列表以及扩展能力配置的基本语法和规则。
+title: GDZ.WORKS 自定义模型服务商模型列表及扩展能力配置
+description: 了解如何在 GDZ.WORKS 中自定义模型列表以及扩展能力配置的基本语法和规则。
 tags:
-  - LobeChat
+  - GDZ.WORKS
   - 自定义模型列表
   - 扩展能力配置
   - 模型展示名
@@ -11,7 +11,7 @@ tags:
 
 # Model List
 
-LobeChat 支持在部署时自定义模型列表，详情请参考 [模型提供商](/zh/docs/self-hosting/environment-variables/model-provider) 。
+GDZ.WORKS 支持在部署时自定义模型列表，详情请参考 [模型提供商](/zh/docs/self-hosting/environment-variables/model-provider) 。
 
 你可以使用 `+` 增加一个模型，使用 `-` 来隐藏一个模型，使用 `模型名->部署名=展示名<扩展配置>` 来自定义模型的展示名，用英文逗号隔开。通过 `<>` 来添加扩展配置。基本语法如下：
 
@@ -45,11 +45,11 @@ id->deploymentName=displayName<maxToken:vision:reasoning:search:fc:file:imageOut
 
 目前支持的扩展能力有：
 
-| ---         | 描述                     |
-| ----------- | ---------------------- |
-| `fc`        | 函数调用（function calling） |
-| `vision`    | 视觉识别                   |
-| `imageOutput`      | 图像生成  |
-| `reasoning` | 支持推理                   |
-| `search`    | 支持联网搜索                   |
-| `file`      | 文件上传（比较 hack，不建议日常使用）  |
+| ---           | 描述                     |
+| ------------- | ---------------------- |
+| `fc`          | 函数调用（function calling） |
+| `vision`      | 视觉识别                   |
+| `imageOutput` | 图像生成                   |
+| `reasoning`   | 支持推理                   |
+| `search`      | 支持联网搜索                 |
+| `file`        | 文件上传（比较 hack，不建议日常使用）  |

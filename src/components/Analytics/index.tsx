@@ -1,4 +1,3 @@
-import React from 'react';
 import dynamic from 'next/dynamic';
 
 import { analyticsEnv } from '@/config/analytics';
@@ -7,8 +6,6 @@ import { isDesktop } from '@/const/version';
 import Desktop from './Desktop';
 import Google from './Google';
 import Vercel from './Vercel';
-import YandexMetrika from './YandexMetrika';
-import ClerkRegistrationGoal from './ClerkRegistrationGoal';
 
 const Plausible = dynamic(() => import('./Plausible'));
 const Posthog = dynamic(() => import('./Posthog'));
@@ -46,10 +43,6 @@ const Analytics = () => {
       {!!analyticsEnv.REACT_SCAN_MONITOR_API_KEY && (
         <ReactScan apiKey={analyticsEnv.REACT_SCAN_MONITOR_API_KEY} />
       )}
-      {analyticsEnv.ENABLED_YANDEX_METRIKA && analyticsEnv.YANDEX_METRIKA_ID && (
-        <YandexMetrika metrikaId={analyticsEnv.YANDEX_METRIKA_ID} />
-      )}
-      <ClerkRegistrationGoal />
       {isDesktop && <Desktop />}
     </>
   );

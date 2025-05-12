@@ -59,9 +59,8 @@ const Header = memo<HeaderProps>(({ identifier, data, mobile }) => {
           <Flexbox gap={4}>
             <h1 className={styles.title}>{data.meta.title}</h1>
             <Flexbox align={'center'} gap={8} horizontal>
-              <Link href={data.homepage} target={'_blank'}>
-                @{data.author}
-              </Link>
+              {/* Было: <Link href={data.homepage} target={'_blank'}>@{data.author}</Link> */}
+              <span>@{data.author}</span>
               <time className={styles.time} dateTime={new Date(data.createdAt).toISOString()}>
                 {data.createdAt}
               </time>

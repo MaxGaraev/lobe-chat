@@ -1,20 +1,20 @@
 ---
-title: Automatic Synchronization with LobeChat Desktop
-description: Configure LobeChat Desktop for a synchronized experience
+title: Automatic Synchronization with GDZ.WORKS Desktop
+description: Configure GDZ.WORKS Desktop for a synchronized experience
 tags:
-  - LobeChat
+  - GDZ.WORKS
   - Desktop Synchronization
   - Self-Hosted Instance
   - OIDC Configuration
 ---
 
-# Automatic Synchronization with LobeChat Desktop
+# Automatic Synchronization with GDZ.WORKS Desktop
 
-LobeChat Desktop provides users with an enhanced experience while also expanding the capabilities of LobeChat, allowing users to utilize LobeChat in offline environments. This document will guide you on how to configure LobeChat Desktop and connect it to your self-hosted instance.
+GDZ.WORKS Desktop provides users with an enhanced experience while also expanding the capabilities of GDZ.WORKS, allowing users to utilize GDZ.WORKS in offline environments. This document will guide you on how to configure GDZ.WORKS Desktop and connect it to your self-hosted instance.
 
 ## System Requirements
 
-LobeChat Desktop is built using Electron and supports the following operating systems:
+GDZ.WORKS Desktop is built using Electron and supports the following operating systems:
 
 - Windows
 - macOS
@@ -22,16 +22,16 @@ LobeChat Desktop is built using Electron and supports the following operating sy
 
 ## Desktop Version Information
 
-The version release of LobeChat Desktop follows this logic:
+The version release of GDZ.WORKS Desktop follows this logic:
 
-- **Beta Version**: All merges to the main branch that are automatically released will be created as Beta versions of LobeChat Desktop.
+- **Beta Version**: All merges to the main branch that are automatically released will be created as Beta versions of GDZ.WORKS Desktop.
 - **Stable Version**: The development team will periodically release stable versions through manual tagging.
 
 If you wish to access the latest features, you can use the Beta version; if you prioritize stability, please use the Stable version.
 
 ## Connecting to a Self-Hosted Instance
 
-LobeChat Desktop can connect to your self-hosted LobeChat instance, allowing you to use your self-hosted configuration on the desktop.
+GDZ.WORKS Desktop can connect to your self-hosted GDZ.WORKS instance, allowing you to use your self-hosted configuration on the desktop.
 
 ### Preparations
 
@@ -49,14 +49,14 @@ You need to add the following two environment variables, `ENABLE_OIDC` and `OIDC
 
 Add the generated JWK key to your environment variables.
 
-If you are deploying LobeChat using one-click deployment methods (such as Vercel, Railway, etc.), you need to:
+If you are deploying GDZ.WORKS using one-click deployment methods (such as Vercel, Railway, etc.), you need to:
 
 1. Add the above environment variables to the environment variable configuration of your deployment platform.
 2. For Vercel deployments, ensure that the `APP_URL` environment variable is set to your domain URL, which is crucial for correctly handling authentication callbacks.
 
 ### Connection Steps
 
-1. Open LobeChat Desktop.
+1. Open GDZ.WORKS Desktop.
 2. Click the Wi-Fi icon in the upper right corner.
 3. Enter the address of your self-hosted instance (e.g., `https://your-lobechat-instance.com`).
 4. Click the "Connect" button.

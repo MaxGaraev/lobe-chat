@@ -76,21 +76,21 @@ function updatePackageJson() {
     // 根据 releaseType 修改其他字段
     switch (releaseType) {
       case 'stable': {
-        packageJson.productName = 'LobeHub';
-        packageJson.name = 'lobehub-desktop';
+        packageJson.productName = 'gdz-works';
+        packageJson.name = 'gdz-works-desktop';
         console.log('🌟 Setting as Stable version.');
         break;
       }
       case 'beta': {
-        packageJson.productName = 'LobeHub-Beta'; // Or 'LobeHub-Beta' if preferred
-        packageJson.name = 'lobehub-desktop-beta'; // Or 'lobehub-desktop' if preferred
+        packageJson.productName = 'gdz-works-beta'; // Or 'LobeHub-Beta' if preferred
+        packageJson.name = 'gdz-works-desktop-beta'; // Or 'lobehub-desktop' if preferred
         console.log('🧪 Setting as Beta version.');
         updateAppIcon('beta');
         break;
       }
       case 'nightly': {
-        packageJson.productName = 'LobeHub-Nightly'; // Or 'LobeHub-Nightly'
-        packageJson.name = 'lobehub-desktop-nightly'; // Or 'lobehub-desktop-nightly'
+        packageJson.productName = 'gdz-works-nightly'; // Or 'LobeHub-Nightly'
+        packageJson.name = 'gdz-works-desktop-nightly'; // Or 'lobehub-desktop-nightly'
         console.log('🌙 Setting as Nightly version.');
         updateAppIcon('nightly');
         break;

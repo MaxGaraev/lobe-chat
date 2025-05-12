@@ -39,14 +39,9 @@ export const generateMetadata = async (props: DiscoverPageProps) => {
   const { data, t, locale, identifier } = await getSharedProps(props);
   if (!data) return;
 
-  const { meta, createdAt, homepage, author } = data;
+  const { meta, createdAt } = data;
 
   return {
-    authors: [
-      { name: author, url: homepage },
-      { name: 'LobeHub', url: 'https://github.com/lobehub' },
-      { name: 'LobeChat', url: 'https://github.com/lobehub/lobe-chat' },
-    ],
     keywords: meta.tags,
     webpage: {
       enable: true,
@@ -61,7 +56,6 @@ export const generateMetadata = async (props: DiscoverPageProps) => {
       url: urlJoin('/discover/plugin', identifier),
     }),
     other: {
-      'article:author': author,
       'article:published_time': createdAt
         ? new Date(createdAt).toISOString()
         : new Date().toISOString(),
@@ -74,10 +68,10 @@ const Page = async (props: DiscoverPageProps) => {
   const { data, t, identifier, isMobile, locale } = await getSharedProps(props);
   if (!data) return notFound();
 
-  const { meta, createdAt, author } = data;
+  const { meta, createdAt } = data;
   const ld = ldModule.generate({
     article: {
-      author: [author],
+      author: [],
       enable: true,
       identifier,
       tags: meta.tags,

@@ -3,7 +3,7 @@ title: >-
   Configuring Online Search Functionality - Enhancing AI's Ability to Access Web
   Information
 description: >-
-  Learn how to configure the SearXNG online search functionality for LobeChat,
+  Learn how to configure the SearXNG online search functionality for GDZ.WORKS,
   enabling AI to access the latest web information.
 tags:
   - Online Search
@@ -14,10 +14,10 @@ tags:
 
 # Configuring Online Search Functionality
 
-LobeChat supports configuring online search functionality for AI, allowing it to access the latest web information and provide more accurate and timely responses. The online search feature is based on the [SearXNG](https://github.com/searxng/searxng) search engine, which is a privacy-respecting metasearch engine that aggregates results from multiple search engines.
+GDZ.WORKS supports configuring online search functionality for AI, allowing it to access the latest web information and provide more accurate and timely responses. The online search feature is based on the [SearXNG](https://github.com/searxng/searxng) search engine, which is a privacy-respecting metasearch engine that aggregates results from multiple search engines.
 
 <Callout type={'info'}>
-  SearXNG is an open-source metasearch engine that can be self-hosted or accessed via public instances. By configuring SearXNG, LobeChat enables AI to retrieve the latest internet information, allowing it to answer time-sensitive questions and provide up-to-date news.
+  SearXNG is an open-source metasearch engine that can be self-hosted or accessed via public instances. By configuring SearXNG, GDZ.WORKS enables AI to retrieve the latest internet information, allowing it to answer time-sensitive questions and provide up-to-date news.
 </Callout>
 
 # Core Environment Variables
@@ -32,7 +32,7 @@ SEARXNG_URL=https://searxng-instance.com
 
 This URL should point to a functional SearXNG instance. You can choose to self-host SearXNG or use a publicly available SearXNG instance.
 
-You can find publicly available SearXNG instances in the [SearXNG instance list](https://searx.space/). Choose an instance that is fast and reliable, and then configure its URL in LobeChat.
+You can find publicly available SearXNG instances in the [SearXNG instance list](https://searx.space/). Choose an instance that is fast and reliable, and then configure its URL in GDZ.WORKS.
 
 > Note that the `searxng` you use must have `json` output enabled; otherwise, the `lobe-chat` call will result in an error.
 > If self-hosting, find the `searxng` configuration file and add `json` as shown below.
@@ -50,7 +50,7 @@ search:
 
 After configuration, you can verify whether the online search functionality is working correctly by following these steps:
 
-1. Restart the LobeChat service.
+1. Restart the GDZ.WORKS service.
 2. Start a new chat session, enable smart online search, and then ask AI a question that requires the latest information, such as "What is the current gold price today?" or "What are the latest major news stories?"
 3. Observe whether AI can return the latest information based on internet searches.
 
@@ -58,6 +58,6 @@ If AI can answer these time-sensitive questions, it indicates that the online se
 
 ## References
 
-- [LobeChat Online Search RFC Discussion](https://github.com/lobehub/lobe-chat/discussions/6447)
+- [GDZ.WORKS Online Search RFC Discussion](https://github.com/lobehub/lobe-chat/discussions/6447)
 - [SearXNG GitHub Repository](https://github.com/searxng/searxng)
 - [Discussion on Enabling JSON Output for SearXNG](https://github.com/searxng/searxng/discussions/3542)

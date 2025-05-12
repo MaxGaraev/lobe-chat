@@ -30,14 +30,19 @@ const List = memo<ListProps>(({ category, searchKeywords, items = [] }) => {
         <VirtuosoGridList
           data={items}
           initialItemCount={24}
-          itemContent={(_, item) => (
-            <Card
-              href={urlJoin('/discover/model', item.identifier)}
-              key={item.identifier}
-              showCategory
-              {...item}
-            />
-          )}
+          itemContent={(_, item) => {
+            if (!item || !item.identifier) {
+              return null;
+            }
+            return (
+              <Card
+                href={urlJoin('/discover/model', item.identifier)}
+                key={item.identifier}
+                showCategory
+                {...item}
+              />
+            );
+          }}
           style={{
             minHeight: '75vh',
           }}
@@ -52,14 +57,19 @@ const List = memo<ListProps>(({ category, searchKeywords, items = [] }) => {
       <VirtuosoGridList
         data={items}
         initialItemCount={24}
-        itemContent={(_, item) => (
-          <Card
-            href={urlJoin('/discover/model/', item.identifier)}
-            key={item.identifier}
-            showCategory={!category}
-            {...item}
-          />
-        )}
+        itemContent={(_, item) => {
+          if (!item || !item.identifier) {
+            return null;
+          }
+          return (
+            <Card
+              href={urlJoin('/discover/model/', item.identifier)}
+              key={item.identifier}
+              showCategory={!category}
+              {...item}
+            />
+          );
+        }}
         style={{
           minHeight: '75vh',
         }}

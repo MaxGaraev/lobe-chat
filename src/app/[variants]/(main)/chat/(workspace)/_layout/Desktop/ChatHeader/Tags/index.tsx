@@ -5,9 +5,9 @@ import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 import ModelSwitchPanel from '@/features/ModelSwitchPanel';
-import PluginTag from '@/features/PluginTag';
+// import PluginTag from '@/features/PluginTag';
 import { useAgentEnableSearch } from '@/hooks/useAgentEnableSearch';
-import { useModelSupportToolUse } from '@/hooks/useModelSupportToolUse';
+// import { useModelSupportToolUse } from '@/hooks/useModelSupportToolUse';
 import { useAgentStore } from '@/store/agent';
 import { agentChatConfigSelectors, agentSelectors } from '@/store/agent/selectors';
 import { useUserStore } from '@/store/user';
@@ -18,18 +18,18 @@ import KnowledgeTag from './KnowledgeTag';
 import SearchTags from './SearchTags';
 
 const TitleTags = memo(() => {
-  const [model, provider, hasKnowledge, isLoading] = useAgentStore((s) => [
+  const [model, , hasKnowledge, isLoading] = useAgentStore((s) => [
     agentSelectors.currentAgentModel(s),
     agentSelectors.currentAgentModelProvider(s),
     agentSelectors.hasKnowledge(s),
     agentSelectors.isAgentConfigLoading(s),
   ]);
 
-  const plugins = useAgentStore(agentSelectors.currentAgentPlugins, isEqual);
+  // const plugins = useAgentStore(agentSelectors.currentAgentPlugins, isEqual);
   const enabledKnowledge = useAgentStore(agentSelectors.currentEnabledKnowledge, isEqual);
   const enableHistoryCount = useAgentStore(agentChatConfigSelectors.enableHistoryCount);
 
-  const showPlugin = useModelSupportToolUse(model, provider);
+  // const showPlugin = useModelSupportToolUse(model, provider);
   const isLogin = useUserStore(authSelectors.isLogin);
 
   const isAgentEnableSearch = useAgentEnableSearch();
@@ -42,7 +42,7 @@ const TitleTags = memo(() => {
         <ModelTag model={model} />
       </ModelSwitchPanel>
       {isAgentEnableSearch && <SearchTags />}
-      {showPlugin && plugins?.length > 0 && <PluginTag plugins={plugins} />}
+      {/* {showPlugin && plugins?.length > 0 && <PluginTag plugins={plugins} />} */}
       {hasKnowledge && <KnowledgeTag data={enabledKnowledge} />}
       {enableHistoryCount && <HistoryLimitTags />}
     </Flexbox>
